@@ -9,6 +9,11 @@ export type ResearchItem = {
   body: string[]
   people: string[]
   papers: string[]
+  /** Optional thumbnail shown on the research index. */
+  image?: {
+    src: string
+    alt: string
+  }
   /** Optional link to a project repository in the erfl-fiu organization. */
   repo?: string
   links?: { label: string; href: string }[]
@@ -22,6 +27,10 @@ export const research: ResearchItem[] = [
     application: "catastrophe",
     summary:
       "Catastrophe-bond pricing design built on FPHLM, the public hurricane catastrophe model based at FIU.",
+    image: {
+      src: "/images/front/hurricane.jpg",
+      alt: "Satellite view of a hurricane over the ocean.",
+    },
     body: [
       "The [Florida Public Hurricane Loss Model (FPHLM)](https://fphlm.cs.fiu.edu/) is a publicly developed, state-certified hurricane catastrophe model led by Florida International University and created by a multidisciplinary, multi-university team. Its wind-hazard, engineering-vulnerability, and actuarial components estimate insured losses and probable maximum losses for personal and commercial residential properties. The State of Florida uses FPHLM as a benchmark for evaluating insurers’ windstorm risk estimates and reviewing residential property insurance rates.",
       "Our lab builds on FPHLM loss estimates to study catastrophe-bond structuring and pricing. The project examines how a transparent hurricane-loss distribution can inform the loss metric, trigger, attachment point, payout structure, and risk premium of a catastrophe bond. The specific contract design is currently under development.",
@@ -42,6 +51,10 @@ export const research: ResearchItem[] = [
     application: "agriculture",
     summary:
       "How hurricane wind and flood hazard become losses for farms, and how that risk might be financed.",
+    image: {
+      src: "/images/front/flood-on-farm.jpg",
+      alt: "A person looking across a flooded cornfield.",
+    },
     body: [
       "Hurricanes damage crops, farm buildings, and the routes that move agricultural products. Wind, rainfall, and flooding do not fall evenly across a region, and one storm can create losses across many operations at the same time.",
       "This project studies how hurricane hazard becomes agricultural risk, and how that risk shows up for growers, insurers, and public programs. Papers and a code repository will be added here as the work is released.",

@@ -58,18 +58,34 @@ export default function ResearchPage() {
 function ResearchCard({ item }: { item: ResearchItem }) {
   return (
     <article className="border-t border-border py-6">
-      <p className="text-xs font-semibold tracking-[0.14em] text-fiu-blue uppercase">
-        {item.status}
-      </p>
-      <h3 className="mt-2 text-[21px] leading-snug font-semibold">
-        <Link
-          href={`/research/${item.slug}`}
-          className="text-fiu-blue underline decoration-transparent underline-offset-4 hover:decoration-fiu-blue"
-        >
-          {item.title}
-        </Link>
-      </h3>
-      <p className="mt-2 max-w-3xl text-base leading-relaxed">{item.summary}</p>
+      <div className="flex gap-4 sm:gap-5">
+        {item.image ? (
+          <div className="relative aspect-[4/3] w-28 shrink-0 overflow-hidden sm:w-36">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={item.image.src}
+              alt={item.image.alt}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
+        ) : null}
+        <div className="min-w-0 flex-1">
+          <p className="text-xs font-semibold tracking-[0.14em] text-fiu-blue uppercase">
+            {item.status}
+          </p>
+          <h3 className="mt-2 text-[21px] leading-snug font-semibold">
+            <Link
+              href={`/research/${item.slug}`}
+              className="text-fiu-blue underline decoration-transparent underline-offset-4 hover:decoration-fiu-blue"
+            >
+              {item.title}
+            </Link>
+          </h3>
+          <p className="mt-2 max-w-3xl text-base leading-relaxed">
+            {item.summary}
+          </p>
+        </div>
+      </div>
     </article>
   )
 }
