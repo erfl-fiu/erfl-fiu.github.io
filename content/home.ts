@@ -65,8 +65,8 @@ export const approach = [
     body: "The Florida Public Hurricane Loss Model gives a public account of hurricane wind loss, open to scientific scrutiny where commercial catastrophe models stay proprietary. We treat that loss field as the starting point for financial design.",
   },
   {
-    title: "Causal machine learning",
-    body: "Hazard, exposure, and local economic conditions are tangled in the historical record. Causal machine learning, including causal forests, separates what a financial instrument changes from what a place would have done anyway. That is the approach behind the lab’s green-bond and carbon-emissions work.",
+    title: "Physics-informed machine learning",
+    body: "Environmental risk data are often limited for the extreme events that matter most. Physics-informed machine learning combines observations with physical models and system constraints to produce more reliable and interpretable estimates. The lab couples these methods with stochastic ensembles to propagate uncertainty from hazards through exposure and vulnerability to infrastructure disruption and economic loss, supporting decisions based on the likelihood and range of possible outcomes rather than a single estimate.",
   },
   {
     title: "Financial risk-transfer design",

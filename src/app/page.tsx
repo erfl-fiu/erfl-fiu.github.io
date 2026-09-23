@@ -51,7 +51,15 @@ export default function HomePage() {
             How we work
           </h2>
           <p className="text-base leading-relaxed text-muted-foreground">
-            Methods that turn hazard estimates into contracts people can use.
+            Methods that translate{" "}
+            <strong className="font-semibold text-muted-foreground">
+              hazard uncertainty
+            </strong>{" "}
+            into{" "}
+            <strong className="font-semibold text-muted-foreground">
+              actionable risk management
+            </strong>{" "}
+            and financial strategies.
           </p>
         </div>
         <div className="mt-10 grid gap-8 md:grid-cols-3 md:gap-6">
