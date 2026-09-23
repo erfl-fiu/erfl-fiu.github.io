@@ -73,13 +73,25 @@ function PersonRow({ person }: { person: Person }) {
           <h2 className="text-[21px] font-semibold tracking-tight">{heading}</h2>
           {person.name ? (
             <p className="mt-1 text-sm leading-6 text-muted-foreground">
-              {person.role}
+              {person.role.split("\n").map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
             </p>
           ) : null}
         </div>
-        <p className="max-w-3xl text-base leading-relaxed">
-          {person.biography ?? "Biography forthcoming."}
-        </p>
+        <div className="flex max-w-3xl flex-col gap-4">
+          {(person.biography ?? "Biography forthcoming.")
+            .split(/\n\s*\n/)
+            .map((paragraph) => paragraph.trim())
+            .filter(Boolean)
+            .map((paragraph) => (
+              <p key={paragraph} className="text-base leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
+        </div>
         {person.links.length > 0 ? (
           <ul className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
             {person.links.map((link) => (

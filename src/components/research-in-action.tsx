@@ -10,13 +10,17 @@ export function ResearchInAction() {
         return (
           <article
             key={item.id}
-            className="grid items-center gap-6 md:grid-cols-2 md:gap-10"
+            className={
+              imageFirst
+                ? "grid items-center gap-6 md:grid-cols-[3fr_5fr] md:gap-10"
+                : "grid items-center gap-6 md:grid-cols-[5fr_3fr] md:gap-10"
+            }
           >
             <div
               className={
                 imageFirst
-                  ? "relative aspect-[4/3] overflow-hidden md:order-1"
-                  : "relative aspect-[4/3] overflow-hidden md:order-2"
+                  ? "relative aspect-[4/3] w-3/4 overflow-hidden md:order-1 md:w-full"
+                  : "relative aspect-[4/3] w-3/4 overflow-hidden md:order-2 md:w-full"
               }
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
