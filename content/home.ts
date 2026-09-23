@@ -27,7 +27,7 @@ export const researchInAction: ResearchHighlight[] = [
   {
     id: "catastrophe",
     title: "Public hurricane models and cat bonds",
-    body: "The Florida Public Hurricane Loss Model is the public hurricane catastrophe model developed at FIU. This lab uses that public loss record to study how catastrophe bonds can be designed so capital is in place when a landfalling storm creates large insured losses.",
+    body: "Dr. Dan Li is a member of the multi-university Florida Public Hurricane Loss Model (FPHLM) team, which develops and maintains the FIU-led public hurricane catastrophe model. Her lab uses FPHLM-generated loss distributions to investigate how catastrophe bonds can be structured and priced so that pre-arranged capital can be released following hurricanes that produce severe insured losses.",
     href: "/research/fphlm-cat-bonds/",
     image: {
       src: "/images/front/hurricane.jpg",

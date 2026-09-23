@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 
-import { currentPeople, previousStudents, type Person } from "@content/people"
+import { currentPeople, mentoredStudents, type Person } from "@content/people"
 
 export const metadata: Metadata = {
   title: "People",
@@ -20,10 +20,10 @@ export default function PeoplePage() {
 
       <section id="previous" className="mt-20 scroll-mt-8">
         <h2 className="text-[21px] font-semibold tracking-tight">
-          Previous students
+          Students Mentored
         </h2>
         <ul className="mt-4 max-w-3xl">
-          {previousStudents.map((student) => (
+          {mentoredStudents.map((student) => (
             <li
               key={student.name}
               className="grid gap-1 border-t border-border py-3 sm:grid-cols-[minmax(0,16rem)_1fr] sm:items-baseline sm:gap-8"

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import type { ReactNode } from "react"
 
 import { publicationById } from "@content/publications"
 import { research, researchBySlug } from "@content/research"
@@ -18,6 +19,28 @@ export async function generateMetadata({
   const item = researchBySlug(slug)
   if (!item) return { title: "Research" }
   return { title: item.title, description: item.summary }
+}
+
+function RichParagraph({ text }: { text: string }) {
+  const nodes: ReactNode[] = []
+  const pattern = /\[([^\]]+)\]\(([^)]+)\)/g
+  let last = 0
+  for (const match of text.matchAll(pattern)) {
+    const index = match.index ?? 0
+    if (index > last) nodes.push(text.slice(last, index))
+    nodes.push(
+      <a
+        key={index}
+        href={match[2]}
+        className="text-fiu-blue underline decoration-fiu-gold underline-offset-4"
+      >
+        {match[1]}
+      </a>
+    )
+    last = index + match[0].length
+  }
+  if (last < text.length) nodes.push(text.slice(last))
+  return <p className="text-base leading-relaxed">{nodes}</p>
 }
 
 export default async function ResearchDetailPage({
@@ -48,9 +71,7 @@ export default async function ResearchDetailPage({
       <p className="mt-5 max-w-3xl text-lg leading-relaxed">{item.summary}</p>
       <div className="mt-8 flex max-w-3xl flex-col gap-4">
         {item.body.map((paragraph) => (
-          <p key={paragraph} className="text-base leading-relaxed">
-            {paragraph}
-          </p>
+          <RichParagraph key={paragraph} text={paragraph} />
         ))}
       </div>
 

@@ -15,7 +15,7 @@ export type Person = {
   links: PersonLink[]
 }
 
-export type PreviousStudent = {
+export type MentoredStudent = {
   name: string
   role: string
 }
@@ -52,9 +52,25 @@ export const currentPeople: Person[] = [
   },
 ]
 
-export const previousStudents: PreviousStudent[] = [
+export const mentoredStudents: MentoredStudent[] = [
   {
     name: "Christina Petagna",
     role: "Student mentee, water utility risk",
+  },
+  {
+    name: "Collin Elliott",
+    role: "Undergraduate student, UNC",
+  },
+  {
+    name: "Weicheng Xu",
+    role: "Undergraduate student, UNC",
+  },
+  {
+    name: "Alyson Ficca",
+    role: "M.S. student, UNC",
+  },
+  {
+    name: "Jingran Wang",
+    role: "Undergraduate student, UNC",
   },
 ]
