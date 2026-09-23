@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" role="img" aria-label="Abstract capital columns">
+  <rect width="800" height="533" fill="#E7EEF6"/>
+  <rect x="90" y="180" width="70" height="240" fill="#081E3F"/>
+  <rect x="200" y="120" width="70" height="300" fill="#081E3F"/>
+  <rect x="310" y="220" width="70" height="200" fill="#D1A644"/>
+  <rect x="420" y="90" width="70" height="330" fill="#081E3F"/>
+  <rect x="530" y="160" width="70" height="260" fill="#0C2C58"/>
+  <path d="M70 440h620" stroke="#081E3F" stroke-width="6"/>
+</svg>

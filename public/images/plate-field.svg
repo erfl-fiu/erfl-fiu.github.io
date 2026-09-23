@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" role="img" aria-label="Abstract agricultural field">
+  <rect width="800" height="533" fill="#F4F7FB"/>
+  <path d="M0 160h800" stroke="#D1A644" stroke-width="18"/>
+  <path d="M0 220h800M0 280h800M0 340h800M0 400h800M0 460h800" stroke="#081E3F" stroke-width="8"/>
+  <circle cx="640" cy="78" r="36" fill="#D1A644"/>
+</svg>

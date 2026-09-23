@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" role="img" aria-label="Abstract reservoir">
+  <rect width="800" height="533" fill="#E7EEF6"/>
+  <path d="M60 180h680v40H60z" fill="#081E3F"/>
+  <path d="M80 220c40 90 80 140 140 150h360c60-10 100-60 140-150H80z" fill="#0C2C58"/>
+  <path d="M140 300c80 20 160 20 260 0" fill="none" stroke="#D1A644" stroke-width="6"/>
+  <path d="M180 340c70 16 140 16 210 0" fill="none" stroke="#F4F7FB" stroke-width="4"/>
+  <rect x="360" y="80" width="28" height="100" fill="#D1A644"/>
+</svg>

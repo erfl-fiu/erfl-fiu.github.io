@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" role="img" aria-label="Abstract blue and gold horizon">
+  <rect width="1600" height="520" fill="#081E3F"/>
+  <path d="M0 280c180-40 320 30 520-10s360-80 560-20 340 70 520 10v260H0Z" fill="#0C2C58"/>
+  <path d="M0 360c220-50 380 40 620-8s300-70 520 6 280 40 460-20v182H0Z" fill="#D1A644"/>
+  <path d="M0 430c260-30 420 24 700-6s340-28 520 12 220 20 380-8v92H0Z" fill="#F4F7FB"/>
+  <circle cx="1240" cy="128" r="46" fill="none" stroke="#D1A644" stroke-width="3"/>
+  <circle cx="1240" cy="128" r="7" fill="#D1A644"/>
+  <path d="M180 150h220M180 170h140" stroke="#E7EEF6" stroke-width="2" opacity=".7"/>
+</svg>
