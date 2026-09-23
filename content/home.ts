@@ -18,8 +18,8 @@ export const hero = {
   bylineName: "Dr. Dan Li,",
   bylineRest: "Earth and Environment, FIU",
   image: {
-    src: "/images/hero.svg",
-    alt: "Abstract blue and gold horizon standing in for a lab photograph.",
+    src: "/images/front/powerful-storm.avif",
+    alt: "Coastal homes and debris along the shore after a storm.",
   },
 }
 
@@ -30,8 +30,8 @@ export const researchInAction: ResearchHighlight[] = [
     body: "The Florida Public Hurricane Loss Model is the public hurricane catastrophe model developed at FIU. This lab uses that public loss record to study how catastrophe bonds can be designed so capital is in place when a landfalling storm creates large insured losses.",
     href: "/research/fphlm-cat-bonds/",
     image: {
-      src: "/images/plate-storm.svg",
-      alt: "Abstract storm spiral over a dark blue field.",
+      src: "/images/front/hurricane.jpg",
+      alt: "Satellite view of a hurricane over the ocean.",
     },
     imageSide: "left",
   },
@@ -41,8 +41,8 @@ export const researchInAction: ResearchHighlight[] = [
     body: "Hurricanes damage crops, farm structures, and the routes that move food to market. This work follows wind and flood hazard into agricultural loss, and asks where financial tools can share a risk that hits many operations at once.",
     href: "/research/hurricane-agriculture/",
     image: {
-      src: "/images/plate-field.svg",
-      alt: "Abstract field rows under a gold sky.",
+      src: "/images/front/flood-on-farm.jpg",
+      alt: "A person looking across a flooded cornfield.",
     },
     imageSide: "right",
   },
