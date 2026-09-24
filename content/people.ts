@@ -43,11 +43,12 @@ export const currentPeople: Person[] = [
     ],
   },
   {
-    id: "postdoc",
-    name: null,
+    id: "nilima-islam-luba",
+    name: "Nilima Islam Luba",
     role: "Postdoctoral researcher",
-    biography: null,
-    photo: null,
+    biography:
+      "Nilima Islam Luba is an environmental social scientist with a Ph.D. in Earth System Science from Florida International University (FIU). Her research examines how natural hazards, resource insecurity, and environmental change affect communities, with a focus on vulnerability and resilience. She works with multidisciplinary datasets and uses statistical modeling, qualitative methods, and geospatial analysis to study environmental and socioeconomic impacts. She also holds an M.S. in Environmental Studies from FIU and a bachelor’s degree in Urban and Regional Planning from Khulna University of Engineering & Technology, Bangladesh.",
+    photo: "/images/people/nilima-islam-luba.jpeg",
     links: [],
   },
 ]
