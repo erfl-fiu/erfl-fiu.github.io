@@ -40,6 +40,7 @@ export const currentPeople: Person[] = [
       },
       { label: "ORCID", href: "https://orcid.org/0000-0002-6843-9250" },
       { label: "Personal site", href: "https://dlkency.github.io/" },
+      { label: "CV", href: "/cv/dan-li-cv.pdf" },
     ],
   },
   {
