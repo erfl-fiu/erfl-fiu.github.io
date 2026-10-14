@@ -60,7 +60,7 @@ function PersonRow({ person }: { person: Person }) {
         <img
           src={person.photo}
           alt=""
-          className="aspect-square w-full max-w-[306px] object-cover"
+          className="h-auto w-full max-w-[306px]"
         />
       ) : (
         <div
