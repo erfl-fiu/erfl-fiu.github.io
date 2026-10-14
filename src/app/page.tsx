@@ -28,7 +28,7 @@ export default function HomePage() {
         <img
           src={hero.image.src}
           alt={hero.image.alt}
-          className="aspect-3/2 w-full object-cover md:aspect-[1280/412]"
+          className="h-auto w-full"
         />
       </section>
 

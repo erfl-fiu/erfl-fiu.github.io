@@ -18,8 +18,8 @@ export const hero = {
   bylineName: "Dr. Dan Li,",
   bylineRest: "Earth and Environment, FIU",
   image: {
-    src: "/images/front/powerful-storm.avif",
-    alt: "Coastal homes and debris along the shore after a storm.",
+    src: "/images/front/costliest-tracks.png",
+    alt: "Map and chart of the costliest selected Atlantic hurricane tracks and their U.S. landfalls.",
   },
 }
 
@@ -41,8 +41,8 @@ export const researchInAction: ResearchHighlight[] = [
     body: "Hurricanes damage crops, farm structures, and the routes that move food to market. This work follows wind and flood hazard into agricultural loss, and asks where financial tools can share a risk that hits many operations at once.",
     href: "/research/hurricane-agriculture/",
     image: {
-      src: "/images/front/flood-on-farm.jpg",
-      alt: "A person looking across a flooded cornfield.",
+      src: "/images/front/florida-orange-fall.jpg",
+      alt: "Oranges on the ground beside an uprooted citrus tree.",
     },
     imageSide: "right",
   },
@@ -52,8 +52,8 @@ export const researchInAction: ResearchHighlight[] = [
     body: "Earlier work follows flood, drought, and sustainability signals into water-utility decisions, municipal and corporate bond markets, green bonds, and parametric insurance for irrigation districts.",
     href: "/research/#previous",
     image: {
-      src: "/images/plate-reservoir.svg",
-      alt: "Abstract reservoir and intake.",
+      src: "/images/front/ca-aqueduct.jpg",
+      alt: "An aqueduct curving through irrigated fields and dry land.",
     },
     imageSide: "left",
   },

@@ -52,8 +52,8 @@ export const research: ResearchItem[] = [
     summary:
       "How hurricane wind and flood hazard become losses for farms, and how that risk might be financed.",
     image: {
-      src: "/images/front/flood-on-farm.jpg",
-      alt: "A person looking across a flooded cornfield.",
+      src: "/images/front/florida-orange-fall.jpg",
+      alt: "Oranges on the ground beside an uprooted citrus tree.",
     },
     body: [
       "Hurricanes damage crops, farm buildings, and the routes that move agricultural products. Wind, rainfall, and flooding do not fall evenly across a region, and one storm can create losses across many operations at the same time.",

@@ -72,7 +72,7 @@ function PersonRow({ person }: { person: Person }) {
         <div>
           <h2 className="text-[21px] font-semibold tracking-tight">{heading}</h2>
           {person.name ? (
-            <p className="mt-1 text-sm leading-6 text-muted-foreground">
+            <p className="mt-1.5 text-base font-medium leading-snug tracking-tight">
               {person.role.split("\n").map((line) => (
                 <span key={line} className="block">
                   {line}
