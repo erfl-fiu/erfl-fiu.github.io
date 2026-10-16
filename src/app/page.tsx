@@ -12,10 +12,10 @@ export default function HomePage() {
   return (
     <div className="mx-auto flex w-full max-w-[1280px] flex-col gap-20 px-4 pt-10 pb-24 sm:px-8 lg:px-12">
       <section className="flex flex-col gap-6">
+        <h1 className="font-heading text-[clamp(20px,2.55vw,46px)] leading-[1.05] font-medium tracking-tight whitespace-nowrap text-fiu-blue">
+          {hero.title}
+        </h1>
         <div className="flex max-w-4xl flex-col gap-4">
-          <h1 className="font-heading text-[clamp(32px,4vw,56px)] leading-[1.05] font-medium tracking-tight text-fiu-blue">
-            {hero.title}
-          </h1>
           <p className="max-w-3xl text-lg leading-snug tracking-tight text-foreground sm:text-xl">
             {hero.subline}
           </p>

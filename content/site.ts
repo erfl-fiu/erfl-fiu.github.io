@@ -3,6 +3,7 @@ export const site = {
   shortName: "ERFL",
   university: "Florida International University",
   department: "Department of Earth and Environment",
+  departmentUrl: "https://case.fiu.edu/earth-environment/",
   program: "Environmental Finance & Risk Management Program",
   institute: "Institute of Environment",
   emails: [{ address: "dali@fiu.edu", label: "dali@fiu.edu" }],

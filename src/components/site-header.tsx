@@ -42,14 +42,12 @@ export function SiteHeader() {
   return (
     <header className="bg-fiu-blue text-white">
       <div className="mx-auto flex w-full max-w-[1280px] items-center justify-between gap-6 px-4 py-4 sm:px-8 lg:px-12">
-        <Link href="/" className="min-w-0">
-          <span className="font-serif text-2xl leading-none tracking-tight text-white">
-            {site.shortName}
-          </span>
-          <span className="mt-1 block text-xs tracking-wide text-white/80">
-            Earth and Environment · FIU
-          </span>
-        </Link>
+        <a
+          href={site.departmentUrl}
+          className="text-sm tracking-wide text-white/90 underline decoration-transparent underline-offset-4 hover:text-white hover:decoration-fiu-gold"
+        >
+          Earth and Environment · FIU
+        </a>
         <nav className="hidden items-center gap-5 lg:flex" aria-label="Primary">
           {nav.map((item) => {
             const active = isActive(pathname, item.href)
@@ -85,7 +83,7 @@ export function SiteHeader() {
           <SheetContent side="right" className="bg-fiu-blue text-white">
             <SheetHeader>
               <SheetTitle className="font-serif text-white">
-                {site.shortName}
+                Earth and Environment · FIU
               </SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-1 px-4" aria-label="Mobile">
