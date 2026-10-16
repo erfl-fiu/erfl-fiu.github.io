@@ -29,6 +29,14 @@ export default function HomePage() {
           src={hero.image.src}
           alt={hero.image.alt}
           className="h-auto w-full"
+          style={{
+            maskImage:
+              "linear-gradient(to bottom, transparent, black 10%, black 92%, transparent), linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, transparent, black 10%, black 92%, transparent), linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+            maskComposite: "intersect",
+            WebkitMaskComposite: "source-in",
+          }}
         />
       </section>
 
