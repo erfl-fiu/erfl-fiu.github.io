@@ -15,7 +15,7 @@ export const hero = {
   title: "Environmental Risk & Finance Lab (ERFL)",
   subline:
     "Modeling environmental risk. Understanding system impacts. Designing financial resilience.",
-  bylineName: "Dr. Dan Li,",
+  bylineName: "Dan Li,",
   bylineRest: "Earth and Environment, FIU",
   image: {
     src: "/images/front/costliest-tracks.png",
